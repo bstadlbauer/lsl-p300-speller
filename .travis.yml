@@ -6,7 +6,7 @@ before_install:
 install:
 - poetry install -v
 before_deploy:
-- poetry config http-basic.pypi $PYPI_USER $PYPI_PASSWORD
+- poetry config http-basic.pypi __token__ ${{ secrets.PYPI_TOKEN }}
 - poetry build
 deploy:
   provider: script
