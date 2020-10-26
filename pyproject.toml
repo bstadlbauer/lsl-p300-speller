@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bstadlbauer.p300speller"
-version = "0.1.1"
+version = "0.1.2-dev"
 description = "P300 speller based on LSL"
 authors = ["Bernhard Stadlbauer <b.stadlbauer@gmx.net>"]
 license = "GPL-3.0-only"
