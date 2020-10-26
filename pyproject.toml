@@ -3,7 +3,10 @@ name = "bstadlbauer.p300speller"
 version = "0.1.0"
 description = "P300 speller based on LSL"
 authors = ["Bernhard Stadlbauer <b.stadlbauer@gmx.net>"]
-license = "GNU General Public License v3"
+license = "GPL-3.0-only"
+repository = "https://github.com/bstadlbauer/lsl-p300-speller"
+readme = "README.md"
+
 
 packages = [
     { include = "bstadlbauer", from = "src" },
