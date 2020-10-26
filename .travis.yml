@@ -5,11 +5,8 @@ before_install:
 - pip install poetry
 install:
 - poetry install -v
-before_deploy:
-- poetry config http-basic.pypi __token__ ${{ secrets.PYPI_TOKEN }}
-- poetry build
 deploy:
   provider: script
-  script: poetry publish
+  script: poetry publish --build -u __token__ -p ${{ secrets.PYPI_TOKEN }}
   on:
     tags: true
